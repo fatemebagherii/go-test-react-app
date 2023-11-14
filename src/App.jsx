@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Fetch license information from the API
-    fetch('/api/v1/license')
+    fetch('http://localhost:8080/api/v1/license')
       .then((response) => response.json())
       .then((data) => setLicenseData(data))
       .catch((error) => console.error('Error fetching license:', error));
